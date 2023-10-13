@@ -40,10 +40,13 @@ const Events = () => {
                                         <p>269 Clinton Ave, Brooklyn, NY</p>
 
                                     </div>
-                                    <div className="event_user_inputs">
-                                        <input type="text" className="user_name" placeholder='Student ID' />
+                                    <div className="event_timings">
+                                        {/* <input type="text" className="user_name" placeholder='Student ID' />
 
-                                        <input type="text" className="user_name" placeholder='Phone' />
+                                        <input type="text" className="user_name" placeholder='Phone' /> */}
+
+                                        <img src="svg/event_time.svg" alt="" />
+                                        <p>17:00 - 19:00 Hrs</p>
                                     </div>
 
                                     <button className="event_register">

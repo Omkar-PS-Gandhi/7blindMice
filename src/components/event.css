@@ -106,7 +106,7 @@
 
 .event_details{
     margin-top: 20px;
-    width: 30vw;
+    width: 23vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,11 +125,7 @@
     font-weight: 300;
 
 }
-.event_user_inputs{
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .user_name{
     background-color: rgba(255, 255, 255, 0.202);
@@ -165,4 +161,13 @@
     background-color: green;
     color: white;
     transition: 0.3s;
+}
+.event_timings img{
+    width: 15%;
+}
+
+.event_timings{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
 }

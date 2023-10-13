@@ -45,7 +45,7 @@ const Scholarships = () => {
                                 <p>30%</p>
                             </div>
                             <button className="scholarship_info">
-                                Claim now
+                            More Info
                             </button>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Scholarships = () => {
                                 <p>10%</p>
                             </div>
                             <button className="scholarship_info">
-                                Claim now
+                                More Info
                             </button>
                         </div>
                     </div>
