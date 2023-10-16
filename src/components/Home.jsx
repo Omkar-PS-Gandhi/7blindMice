@@ -33,7 +33,7 @@ const Home = () => {
 
                     <div className="cards">
                         <div className="outer_card_layer card1">
-                            <Link to={"/service"}>
+                            <Link to={"/study-rooms"}>
                                 <div className="info_button">
                                     <p>Study Room Service</p>
                                     <img src="/svg/arrow.svg" alt="" />
