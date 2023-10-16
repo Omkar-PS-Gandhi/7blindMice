@@ -17,7 +17,7 @@ const Menu = () => {
 
                     <div className="user">
                         <img src="svg/user_icon.svg" alt="" />
-                        <p>Omkar</p>
+                        <p>{localStorage.getItem('username')}</p>
                     </div>
                 </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Menu from './Menu'
 
 import "./home.css"
 import { Link } from 'react-router-dom'
@@ -8,6 +9,7 @@ const Home = () => {
     return (
         
         <>
+        <Menu/>
             <section className="home_page">
                 <div className="landing_img">
                     <div className="black_lay_over">

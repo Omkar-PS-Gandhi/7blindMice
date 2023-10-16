@@ -2,10 +2,12 @@ import React from 'react'
 import './scholarship.css'
 import GoToTop from './GoToTop'
 import { Link } from 'react-router-dom'
+import Menu from './Menu'
 
 const Scholarship = () => {
     return (
         <>
+        <Menu/>
             <section className="scholarship_page">
                 <div className="go_back">
                     <Link to={"/scholarships"}>
