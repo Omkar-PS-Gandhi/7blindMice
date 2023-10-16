@@ -1,5 +1,6 @@
 import React from 'react'
 import "./event.css"
+import GoToTop from './GoToTop'
 
 
 const Events = () => {
@@ -62,6 +63,7 @@ const Events = () => {
                     </div>
 
                 </div>
+                <GoToTop/>
             </section>
         </>
     )

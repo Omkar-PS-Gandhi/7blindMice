@@ -1,5 +1,6 @@
 import React from 'react'
 import './service.css'
+import GoToTop from './GoToTop'
 
 const Service = () => {
     return (
@@ -86,6 +87,8 @@ const Service = () => {
                 </div>
 
             </section>
+
+            <GoToTop/>
         </>
     )
 }

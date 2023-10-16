@@ -1,12 +1,15 @@
 import React from 'react'
 import "./home.css"
+import { Link } from 'react-router-dom'
 
 
 const Menu = () => {
     return (
         <>
             <div className="menu_bar">
-                <img src="images/logo.png" alt="logo" />
+                <Link to={"/"}>
+                    <img src="images/logo.png" alt="logo" />
+                </Link>
                 <div className="menu_tabs">
                     <p></p>
                     <p>Contact</p>

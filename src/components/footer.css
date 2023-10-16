@@ -1,7 +1,7 @@
 .footer_page{
     height: 40vh;
     padding: 0 70px;
-    background-color: rgba(1, 148, 62, 0.367);;
+    background-color: #ffeaca;
 
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@
 
 hr{
     width: 100%;
-    border: 1px solid rgb(9, 193, 214);
+    border: 1px solid #cd8417;
 }
 .footer_row2{
     height: 100px;
@@ -81,7 +81,7 @@ hr{
 }
 
 .footer_row2 a{
-    color: rgb(222, 41, 225);
+    color: #cd8417;
     text-decoration: none;
 
 }

@@ -1,9 +1,12 @@
 import React from 'react'
 
 import "./home.css"
+import { Link } from 'react-router-dom'
+import GoToTop from './GoToTop'
 
 const Home = () => {
     return (
+        
         <>
             <section className="home_page">
                 <div className="landing_img">
@@ -30,24 +33,30 @@ const Home = () => {
 
                     <div className="cards">
                         <div className="outer_card_layer card1">
-                            <div className="info_button">
-                                <p>Study Room Service</p>
-                                <img src="/svg/arrow.svg" alt="" />
-                            </div>
+                            <Link to={"/service"}>
+                                <div className="info_button">
+                                    <p>Study Room Service</p>
+                                    <img src="/svg/arrow.svg" alt="" />
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="outer_card_layer card2">
-                            <div className="info_button">
-                                <p>Events & Activities</p>
-                                <img src="/svg/arrow.svg" alt="" />
-                            </div>
+                            <Link to={"/events"}>
+                                <div className="info_button">
+                                    <p>Events & Activities</p>
+                                    <img src="/svg/arrow.svg" alt="" />
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="outer_card_layer card3">
-                            <div className="info_button">
-                                <p>Scholarships</p>
-                                <img src="/svg/arrow.svg" alt="" />
-                            </div>
+                            <Link to={"/scholarships"}>
+                                <div className="info_button">
+                                    <p>Scholarships</p>
+                                    <img src="/svg/arrow.svg" alt="" />
+                                </div>
+                            </Link>
                         </div>
 
                     </div>
@@ -56,7 +65,7 @@ const Home = () => {
             </section>
 
 
-
+        <GoToTop/>
         </>
     )
 }
