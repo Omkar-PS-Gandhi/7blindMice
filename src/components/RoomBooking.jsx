@@ -1,10 +1,12 @@
 import React from 'react'
 import './roomBooking.css'
 import GoToTop from './GoToTop'
+import Menu from './Menu'
 
 const Service = () => {
     return (
         <>
+        <Menu/>
             <section className="service_page">
                 <div className="service_landing">
                     <div className="black_overlay">

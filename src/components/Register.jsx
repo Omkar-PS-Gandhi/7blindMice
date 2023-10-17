@@ -1,7 +1,55 @@
 import React from 'react'
 import './register.css'
+import axios from 'axios'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const register = () => {
+const Register = () => {
+    const navigate = useNavigate();
+    const [userName, setUserName] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [name, setName] = useState('')
+
+    const handleUserName = (e) => {
+        console.log(e.target.value)
+        setUserName(e.target.value)
+    }
+
+    const handleEmail = (e) => {
+        console.log(e.target.value)
+        setEmail(e.target.value)
+    }
+    const handleName = (e) => {
+        console.log(e.target.value)
+        setName(e.target.value)
+    }
+
+    const handlePassword =(e)=>{
+        setPassword(e.target.value)
+    }
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        console.log("blah blah submitted!!!!!!")
+        axios.post('https://uni-service-6760167bae31.herokuapp.com/auth/register/',{
+            username: userName,
+            email : email,
+            password: password,
+            // name : name
+        }).then((res)=>{
+            alert('successful')
+            console.log(res.data)
+            localStorage.setItem("username",res.data.username)
+            alert(res.data.username)
+            navigate("/Login")
+        }).catch((err)=>{
+            console.log(err.response)
+            alert(err.response.data.error.message)
+        })
+    }
+
+
     
     return (
 
@@ -19,17 +67,17 @@ const register = () => {
                         <h1>Be one of us!</h1>
                         <h2>Please enter your details</h2>
                         <div className="textfields">
-                            <input type="text" placeholder='Student Id' />
-                            <input type="email" placeholder='Email' />
-                            <input type='password' placeholder='Password' />
-                            <div className="phone_name_input">
-                            <input type='phone' placeholder='Name' />
+                            <input type="text" placeholder='Student Id' onChange={handleUserName} value={userName} required/>
+                            <input type="email" placeholder='Email' onChange={handleEmail} value={email} required/>
+                            <input type='password' placeholder='Password' onChange={handlePassword} value={password} required />
+                            <div className="phone_name_input" >
+                            <input type='text' placeholder='Name' onChange={handleName} value={name} required/>
                             {/* <input type='phone' placeholder='Phone' /> */}
                             </div>
                         </div>
 
 
-                        <button className="register_btn">Sign Up</button>
+                        <button onClick={handleSubmit} type='submit' className="register_btn">Sign Up</button>
 
                         <h3 className="create-acc-link">Already a member! <a href="/login">Sign in</a></h3>
 
@@ -41,4 +89,4 @@ const register = () => {
     )
 }
 
-export default register
+export default Register
