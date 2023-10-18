@@ -4,12 +4,16 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import API from '../Data/api.json'
+
 const Register = () => {
     const navigate = useNavigate();
     const [userName, setUserName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
+
+    const registerUrl = API[0].url;
 
     const handleUserName = (e) => {
         console.log(e.target.value)
@@ -32,7 +36,7 @@ const Register = () => {
     const handleSubmit = (e) =>{
         e.preventDefault()
         console.log("blah blah submitted!!!!!!")
-        axios.post('https://uni-service-6760167bae31.herokuapp.com/auth/register/',{
+        axios.post(registerUrl,{
             username: userName,
             email : email,
             password: password,
@@ -47,6 +51,7 @@ const Register = () => {
             console.log(err.response)
             alert(err.response.data.error.message)
         })
+
     }
 
 

@@ -10,7 +10,7 @@
 .service_landing {
     width: 100vw;
     height: 60vh;
-    background-image: url("/public/images/library.jpg");
+    background-image: url("/images/library.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -36,7 +36,7 @@
 }
 
 .service_sort{
-    width: 65vw;
+    width: 45vw;
     height: 150px;
     display: flex;
     align-items: center;
@@ -48,13 +48,16 @@
     margin-top: -80px;
 }
 
-select{
-    width: 300px;
+
+.react-datepicker__input-container input {
+
+    width: 300px !important;
     padding: 10px 20px;
     font-size: 15px;
     border-radius: 10px;
-    border-right: 10px solid rgb(2, 127, 35)
-
+    border: 1px solid green;
+    border-right: 10px solid rgb(2, 127, 35);
+    cursor: pointer;
 }
 
 .check_availability{
@@ -155,3 +158,4 @@ select{
     cursor: not-allowed;
     
 }
+

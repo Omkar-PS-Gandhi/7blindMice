@@ -17,7 +17,7 @@ const footer = () => {
                     <div className="footer_col col2">
                         <p className="link_heading">Quick links</p>
                         <div className="links">
-                            <Link to={"/service"}>
+                            <Link to={"/study-rooms"}>
                                 <p className="quick_links">Room booking</p>
                             </Link>
                             <Link to={"/events"}>
@@ -33,7 +33,7 @@ const footer = () => {
                         <p className="link_heading">Get in touch</p>
                         <div className="links">
                             <p className="quick_links">Contact</p>
-                            <p className="quick_links">Faq</p>
+                            <Link to={"/accordion"}><p className="quick_links">Faq</p></Link>
                         </div>
                     </div>
                 </div>

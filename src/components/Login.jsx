@@ -4,8 +4,12 @@ import { useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import './login.css'
 
+import API from '../Data/api.json'
+
 const Login = () => {
     const navigate = useNavigate();
+
+    const loginUrl = API[1].url;
 
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
@@ -25,7 +29,7 @@ const Login = () => {
     const handleSubmit = (e) =>{
         e.preventDefault()
         console.log("blah blah submitted!!!!!!")
-        axios.post('https://uni-service-6760167bae31.herokuapp.com/auth/login/',{
+        axios.post(loginUrl,{
             username: userName,
             password: password
         }).then((res)=>{

@@ -4,7 +4,7 @@
 
 .event_landing_img{
     height: 70vh;
-    background-image: url(/public/images/event_poster.jpg);
+    background-image: url(/images/event_poster.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@
 .event{
     width: 70vw;
     height: 20vw;
-    background-image: url("/public/images/event_poster.jpg");
+    background-image: url("/images/college_fest.jpg");
     background-size: cover;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -106,7 +106,7 @@
 
 .event_details{
     margin-top: 20px;
-    width: 23vw;
+    width: 25vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,7 +117,7 @@
 }
 
 .event_location{
-    width: 220px;
+    width: 250px;
 
     display: flex;
     align-items: center;
@@ -163,11 +163,11 @@
     transition: 0.3s;
 }
 .event_timings img{
-    width: 15%;
+    width: 25%;
 }
 
 .event_timings{
-    width: 140px;
+    width: 75px;
     display: flex;
     justify-content: space-between;
 }

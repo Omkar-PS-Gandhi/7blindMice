@@ -9,7 +9,7 @@ const Home = () => {
     return (
         
         <>
-        <Menu/>
+
             <section className="home_page">
                 <div className="landing_img">
                     <div className="black_lay_over">
@@ -25,7 +25,7 @@ const Home = () => {
                         <div className="cards_title">
                             <h1>Be active at no cost</h1>
                             <div className="card_sub_text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quisquam est laborum cupiditate voluptatibus accusantium facere ab tenetur veniam sit? Hic asperiores illo odit, qui dignissimos beatae ex dolorem veniam!
+                             From academic clubs to sports, music, and volunteer opportunities, there's something for everyone. Joining clubs or student organizations fosters social connections and personal growth. These activities enhance the college experience and enrich personal development.
                             </div>
                         </div>
                         <div className="cards_img">

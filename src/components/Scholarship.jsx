@@ -3,23 +3,36 @@ import './scholarship.css'
 import GoToTop from './GoToTop'
 import { Link } from 'react-router-dom'
 import Menu from './Menu'
+import { useLocation,useNavigate } from 'react-router-dom'
 
 const Scholarship = () => {
+    var navigate = useNavigate();
+    var data = useLocation()
+    var item = data.state;
+    console.log('---->>>>>>>>>>',item.name)
+    var con = item.description.split('.');
+    console.log(con);
+
+
+
+    // console.log("helllo ",item.data.name);
+
     return (
         <>
-        <Menu/>
+
             <section className="scholarship_page">
                 <div className="go_back">
-                    <Link to={"/scholarships"}>
-                        <div className="go_back_circle"><img src="svg/go_back.svg" alt="" /></div>
-                    </Link></div>
+                    
+                        <div className="go_back_circle"><Link to={"/scholarships"}><img src="svg/go_back.svg" alt="" /></Link></div>
+                    </div>
 
                 <div className="scholarship_headings">
                     <p className="scholarship_info_title">
-                        Sports Quota
+                        {item.name}
                     </p>
                     <p className="scholarship_info_subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloremque ullam pariatur distinctio, et commodi!
+                        {item.name}
+
                     </p>
                 </div>
 
@@ -29,21 +42,19 @@ const Scholarship = () => {
                     <div className="scholarship_data_container">
                         <div className="scholarship_key_points">
                             <img src="svg/check.svg" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, error.</p>
+                            <p> {con[0]}</p>
                         </div>
                         <div className="scholarship_key_points">
                             <img src="svg/check.svg" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, error.</p>
+                            <p>{con[1]}</p>
                         </div>
                         <div className="scholarship_key_points">
                             <img src="svg/check.svg" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, error.</p>
+                            <p>{con[2]}</p>
                         </div>
-                        <div className="scholarship_key_points">
-                            <img src="svg/check.svg" alt="" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, error.</p>
-                        </div>
-                        <span>
+                        
+                        <span onClick={()=>{alert("Baap se paisa maang");
+                        navigate('/')}}>
                             Claim Now!
                         </span>
                     </div>

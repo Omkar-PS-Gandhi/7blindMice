@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Route, Routes } from 'react-router-dom'
 import Login from './components/Login.jsx';
 import Register from './components/Register.jsx';
@@ -9,13 +10,15 @@ import RoomBooking from './components/RoomBooking.jsx'
 import Events from './components/Events.jsx';
 import Scholarships from './components/Scholarships.jsx';
 import Scholarship from './components/Scholarship.jsx';
+import Accordion from './components/Accordion.jsx';
+import Menu from './components/Menu.jsx';
 
 const App = () => {
   return (
 
 
     <>
-    
+    <Menu/>
       <Routes>
         <Route exact path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
@@ -24,6 +27,7 @@ const App = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/scholarship" element={<Scholarship/>} />
+        <Route path="/accordion" element={<Accordion/>} />
       </Routes>
       <Footer />
     </>
