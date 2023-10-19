@@ -36,6 +36,7 @@ const RoomBooking = () => {
 
         
 
+
         userDate = date.toLocaleTimeString().slice(0, 2)
         userTime = date.toLocaleDateString().slice(0, 2)
 
@@ -101,7 +102,6 @@ const RoomBooking = () => {
                     <DatePicker wrapperClassName="datePicker"
                         showTimeSelect
                         injectTimes={[
-                            setHours(setMinutes(new Date(), 0), 8),
                             setHours(setMinutes(new Date(), 0), 10),
                             setHours(setMinutes(new Date(), 0), 12),
                             setHours(setMinutes(new Date(), 0), 14),

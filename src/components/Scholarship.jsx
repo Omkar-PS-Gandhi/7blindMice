@@ -53,8 +53,8 @@ const Scholarship = () => {
                             <p>{con[2]}</p>
                         </div>
                         
-                        <span onClick={()=>{alert("Baap se paisa maang");
-                        navigate('/')}}>
+                        <span onClick={()=>{alert("You've successfully claimed the scholarship!");
+                        navigate('/home')}}>
                             Claim Now!
                         </span>
                     </div>

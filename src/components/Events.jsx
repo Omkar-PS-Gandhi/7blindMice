@@ -69,7 +69,7 @@ const Events = () => {
 
     function handleRegister() {
         alert("You've successfully registered!")
-        navigate('/');
+        navigate('/home');
     }
 
 

@@ -33,7 +33,7 @@ const Login = () => {
             username: userName,
             password: password
         }).then((res)=>{
-            alert('successful')
+            // alert('successful')
             console.log(res.data)
             localStorage.setItem('token', res.data.token)
             console.log("Token "+localStorage.getItem('token'))

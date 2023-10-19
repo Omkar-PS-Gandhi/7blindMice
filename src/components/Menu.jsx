@@ -7,7 +7,7 @@ const Menu = () => {
     return (
         <>
             <div className="menu_bar">
-                <Link to={"/"}>
+                <Link to={"/home"}>
                     <img src="images/logo.png" alt="logo" />
                 </Link>
                 <div className="menu_tabs">

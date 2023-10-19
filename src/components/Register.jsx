@@ -42,10 +42,10 @@ const Register = () => {
             password: password,
             // name : name
         }).then((res)=>{
-            alert('successful')
+            // alert('successful')
             console.log(res.data)
             localStorage.setItem("username",res.data.username)
-            alert(res.data.username)
+            // alert(res.data.username)
             navigate("/")
         }).catch((err)=>{
             console.log(err.response)
