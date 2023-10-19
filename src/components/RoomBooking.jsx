@@ -114,12 +114,19 @@ const RoomBooking = () => {
 
                         includeTimes={[
                             setHours(setMinutes(new Date(), 0), 8),
+                            setHours(setMinutes(new Date(), 0), 9),
                             setHours(setMinutes(new Date(), 0), 10),
+                            setHours(setMinutes(new Date(), 0), 11),
                             setHours(setMinutes(new Date(), 0), 12),
+                            setHours(setMinutes(new Date(), 0), 13),
                             setHours(setMinutes(new Date(), 0), 14),
+                            setHours(setMinutes(new Date(), 0), 15),
                             setHours(setMinutes(new Date(), 0), 16),
+                            setHours(setMinutes(new Date(), 0), 17),
                             setHours(setMinutes(new Date(), 0), 18),
+                            setHours(setMinutes(new Date(), 0), 19),
                             setHours(setMinutes(new Date(), 0), 20),
+                            setHours(setMinutes(new Date(), 0), 21),
                             setHours(setMinutes(new Date(), 0), 22),
 
 
