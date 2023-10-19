@@ -35,8 +35,8 @@ const Events = () => {
                     res.data[0].event_date.toString().slice(-2)
                 )
                 setEventMonth(
-                    
-                    getMonthName(res.data[0].event_date.slice(4,6))
+
+                    getMonthName(res.data[0].event_date.slice(4, 6))
 
                 )
 
@@ -65,7 +65,7 @@ const Events = () => {
     useEffect(() => {
         // e.preventDefault()
         handleSubmit()
-    },[]);
+    }, []);
 
     function handleRegister() {
         alert("You've successfully registered!")
@@ -76,7 +76,7 @@ const Events = () => {
 
     return (
         <>
-
+            <Menu />
             <section className="event_page">
                 <div className="event_landing">
                     <div className="event_landing_img">
@@ -102,7 +102,7 @@ const Events = () => {
                             <div className="event" key={event.id}>
                                 <div className="event_img_layover">
                                     <p className='event_title'>{event.name}</p>
-                                    <p className="event_discription">{event.description.substring(0,150)+ "."}</p>
+                                    <p className="event_discription">{event.description.substring(0, 150) + "."}</p>
 
                                     <div className="event_details">
                                         <div className="event_date">

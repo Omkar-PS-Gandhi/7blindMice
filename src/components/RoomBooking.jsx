@@ -9,6 +9,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import setMinutes from "date-fns/setMinutes";
 import setHours from "date-fns/setHours";
+import Menu from './Menu';
 
 const RoomBooking = () => {
 
@@ -25,16 +26,16 @@ const RoomBooking = () => {
     const [clickedItem, setClickedItem] = useState(null);
 
     const handleCSS = (e) => {
-            e.preventDefault();
-            let selectedTag = e ? parseInt(e.target.id, 10) : null;
-            setClickedItem(selectedTag);
-            console.log(">> clickedItem", clickedItem);
-        };
+        e.preventDefault();
+        let selectedTag = e ? parseInt(e.target.id, 10) : null;
+        setClickedItem(selectedTag);
+        console.log(">> clickedItem", clickedItem);
+    };
 
     const handleSubmit = () => {
 
 
-        
+
 
 
         userDate = date.toLocaleTimeString().slice(0, 2)
@@ -55,7 +56,7 @@ const RoomBooking = () => {
                 // roomsList = (res.data)
                 setRoomsList(res.data);
                 setRoomAvailable(res.data.is_available)
-                console.log("------> Api hit on click",res.data);
+                console.log("------> Api hit on click", res.data);
 
 
                 // console.log("this is roomslist var",roomsList);
@@ -89,7 +90,7 @@ const RoomBooking = () => {
 
     return (
         <>
-            {/* <Menu /> */}
+            <Menu />
             <section className="service_page">
                 <div className="service_landing">
                     <div className="black_overlay">

@@ -11,9 +11,11 @@ const Menu = () => {
                     <img src="images/logo.png" alt="logo" />
                 </Link>
                 <div className="menu_tabs">
+
                     <p></p>
                     <p>Contact</p>
                     <p>FAQ</p>
+
 
                     <div className="user">
                         <img src="svg/user_icon.svg" alt="" />

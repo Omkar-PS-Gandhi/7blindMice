@@ -3,13 +3,13 @@ import './scholarship.css'
 import GoToTop from './GoToTop'
 import { Link } from 'react-router-dom'
 import Menu from './Menu'
-import { useLocation,useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Scholarship = () => {
     var navigate = useNavigate();
     var data = useLocation()
     var item = data.state;
-    console.log('---->>>>>>>>>>',item.name)
+    console.log('---->>>>>>>>>>', item.name)
     var con = item.description.split('.');
     console.log(con);
 
@@ -19,12 +19,13 @@ const Scholarship = () => {
 
     return (
         <>
+            <Menu />
 
             <section className="scholarship_page">
                 <div className="go_back">
-                    
-                        <div className="go_back_circle"><Link to={"/scholarships"}><img src="svg/go_back.svg" alt="" /></Link></div>
-                    </div>
+
+                    <div className="go_back_circle"><Link to={"/scholarships"}><img src="svg/go_back.svg" alt="" /></Link></div>
+                </div>
 
                 <div className="scholarship_headings">
                     <p className="scholarship_info_title">
@@ -52,9 +53,11 @@ const Scholarship = () => {
                             <img src="svg/check.svg" alt="" />
                             <p>{con[2]}</p>
                         </div>
-                        
-                        <span onClick={()=>{alert("You've successfully claimed the scholarship!");
-                        navigate('/home')}}>
+
+                        <span onClick={() => {
+                            alert("You've successfully claimed the scholarship!");
+                            navigate('/home')
+                        }}>
                             Claim Now!
                         </span>
                     </div>

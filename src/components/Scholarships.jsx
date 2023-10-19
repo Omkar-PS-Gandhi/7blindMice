@@ -94,7 +94,7 @@ const Scholarships = () => {
 
     return (
         <>
-
+            <Menu />
             <section className="scholarships_page">
                 <div className="scholarship_landing">
                     <div className="scholarship_landing_left_container">
@@ -112,42 +112,42 @@ const Scholarships = () => {
                 <div className="scholarship_list">
 
 
-{
-    scholarshipData && scholarshipData.map((scholar, i)=>
+                    {
+                        scholarshipData && scholarshipData.map((scholar, i) =>
 
-                    <div className="scholarship_card" key={scholar.id}>
-                        <div className="scholarship_card_left_container">
-                            <img src={image ? image : "images/scholarship_icon.png"} alt="scholar" className="scholarship_card_icon" />
-                        </div>
+                            <div className="scholarship_card" key={scholar.id}>
+                                <div className="scholarship_card_left_container">
+                                    <img src={image ? image : "images/scholarship_icon.png"} alt="scholar" className="scholarship_card_icon" />
+                                </div>
 
-                        <div className="scholarship_card_right_container">
-                            <p className="scholarship_title">
-                                {name ? name : 'Sports Quota'}
-                            </p>
+                                <div className="scholarship_card_right_container">
+                                    <p className="scholarship_title">
+                                        {name ? name : 'Sports Quota'}
+                                    </p>
 
-                            <p className="scholarship_subtitle">
-                                {description ? description : "blah blah"}
-                            </p>
+                                    <p className="scholarship_subtitle">
+                                        {description ? description : "blah blah"}
+                                    </p>
 
-                            <p className="scholarship_type">
-                                {studyArea ? studyArea : 'Table Tennis'}
-                            </p>
+                                    <p className="scholarship_type">
+                                        {studyArea ? studyArea : 'Table Tennis'}
+                                    </p>
 
 
-                        </div>
+                                </div>
 
-                        <div className="scholarship_card_right_container2">
-                            <div className="scholarship_percentage">
-                                <p>{amount ? amount : '10%'}</p>
+                                <div className="scholarship_card_right_container2">
+                                    <div className="scholarship_percentage">
+                                        <p>{amount ? amount : '10%'}</p>
+                                    </div>
+                                    {/* <Link to={"/scholarship"}> */}
+                                    <button className="scholarship_info" onClick={() => { navigate('/scholarship', { state: scholarshipData[i] }) }}>
+                                        More Info
+                                    </button>
+                                    {/* </Link>s */}
+                                </div>
                             </div>
-                            {/* <Link to={"/scholarship"}> */}
-                            <button className="scholarship_info" onClick={()=>{navigate('/scholarship',{state:scholarshipData[i]})}}>
-                                More Info
-                            </button>
-                            {/* </Link>s */}
-                        </div>
-                    </div>
-)}
+                        )}
 
                 </div>
             </section>
