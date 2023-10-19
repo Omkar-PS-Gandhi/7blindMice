@@ -54,6 +54,8 @@ const RoomBooking = () => {
                 // roomsList = (res.data)
                 setRoomsList(res.data);
                 setRoomAvailable(res.data.is_available)
+                console.log("------> Api hit on click",res.data);
+
 
                 // console.log("this is roomslist var",roomsList);
 

@@ -102,7 +102,7 @@ const Events = () => {
                             <div className="event" key={event.id}>
                                 <div className="event_img_layover">
                                     <p className='event_title'>{event.name}</p>
-                                    <p className="event_discription">{event.description}</p>
+                                    <p className="event_discription">{event.description.substring(0,150)+ "."}</p>
 
                                     <div className="event_details">
                                         <div className="event_date">

@@ -46,7 +46,7 @@ const Register = () => {
             console.log(res.data)
             localStorage.setItem("username",res.data.username)
             alert(res.data.username)
-            navigate("/Login")
+            navigate("/")
         }).catch((err)=>{
             console.log(err.response)
             alert(err.response.data.error.message)
@@ -72,11 +72,11 @@ const Register = () => {
                         <h1>Be one of us!</h1>
                         <h2>Please enter your details</h2>
                         <div className="textfields">
-                            <input type="text" placeholder='Student Id' onChange={handleUserName} value={userName} required/>
+                            <input type="text" placeholder='Username' onChange={handleUserName} value={userName} required/>
                             <input type="email" placeholder='Email' onChange={handleEmail} value={email} required/>
                             <input type='password' placeholder='Password' onChange={handlePassword} value={password} required />
                             <div className="phone_name_input" >
-                            <input type='text' placeholder='Name' onChange={handleName} value={name} required/>
+                            <input type='text' placeholder='Student Id' onChange={handleName} value={name} required/>
                             {/* <input type='phone' placeholder='Phone' /> */}
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const Register = () => {
 
                         <button onClick={handleSubmit} type='submit' className="register_btn">Sign Up</button>
 
-                        <h3 className="create-acc-link">Already a member! <a href="/login">Sign in</a></h3>
+                        <h3 className="create-acc-link">Already a member! <a href="/">Sign in</a></h3>
 
                         
                     </div>

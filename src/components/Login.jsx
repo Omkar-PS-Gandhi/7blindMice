@@ -38,7 +38,7 @@ const Login = () => {
             localStorage.setItem('token', res.data.token)
             console.log("Token "+localStorage.getItem('token'))
             localStorage.setItem("username",userName)
-            navigate("/")
+            navigate("/home")
         }).catch((err)=>{
             console.log(err.response)
             alert(err.response.data.error.message)

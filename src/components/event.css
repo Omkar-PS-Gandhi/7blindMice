@@ -106,18 +106,18 @@
 
 .event_details{
     margin-top: 20px;
-    width: 25vw;
+    width: 35vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .event_location img{
-    width: 7%;
+    width: 5%;
 }
 
 .event_location{
-    width: 250px;
+    width: 400px;
 
     display: flex;
     align-items: center;
