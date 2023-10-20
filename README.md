@@ -1,6 +1,13 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# UniService Application
+## Group ID: 23
+## Component: Frontend
+## Technology: React JS
+### Submitted as fulfilment of Group project for subject CSCI927 -  Service-Oriented Software Engineering in the course Master of Computer Science at the University of Wollongong.
+
+
+
+# Setup and Installation
 
 ## Available Scripts
 
